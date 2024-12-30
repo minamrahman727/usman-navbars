@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar -USMAN</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #f3f3f3; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: repeating-linear-gradient(
+                45deg,
+                #000,
+                #000 5px,
+                transparent 5px,
+                transparent 10px
+            );
+        }
+        .logo-heading {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu-items {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-items a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .menu-items a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-section">
+            <div class="logo"></div>
+            <div class="logo-heading">ARROWAI Industries</div>
+        </div>
+        <div class="menu-items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</body>
+</html>

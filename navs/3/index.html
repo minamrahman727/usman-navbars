@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar3 -USMAN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #b4f56c;
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            border-bottom: 2px solid black;
+            gap: 0;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex: 1;
+            min-width: 180px;
+            padding-right: 10px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: repeating-linear-gradient(
+                45deg,
+                black,
+                black 5px,
+                transparent 5px,
+                transparent 10px
+            );
+        }
+
+        .optimized-message {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 30px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            flex: 2;
+            justify-content: center;
+            margin: 0 15px;
+        }
+
+        .optimized-message i {
+            color: black;
+            font-size: 16px;
+        }
+
+        .separator {
+            width: 2px;
+            background-color: black;
+            height: 35px;
+            display: none;
+        }
+
+        .date-section {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            padding-left: 10px;
+            min-width: 100px;
+            justify-content: flex-end;
+        }
+
+        @media screen and (min-width: 768px) {
+            .separator {
+                display: block;
+            }
+            
+            .navbar {
+                flex-wrap: nowrap;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .logo-section, .optimized-message, .date-section {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .optimized-message {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-section">
+            <div class="logo"></div>
+            <div>COMPANY LOGO</div>
+        </div>
+        <div class="separator"></div>
+        <div class="optimized-message">
+            <i class="fas fa-tv"></i>
+            <span>THIS PRESENTATION IS OPTIMIZED FOR WHITE BOARD USE</span>
+        </div>
+        <div class="separator"></div>
+        <div class="date-section">
+            <span id="current-date">Add Date</span>
+        </div>
+    </div>
+</body>
+</html>
